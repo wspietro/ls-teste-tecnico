@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-export default function Home() {
+export default function User() {
   return (
     <div>
-      <h1>Lacrei teste tecnico</h1>
-      <Link href="/user">Pessoa Usuária</Link>
+      <h1>Pessoa usuária</h1>
+      <Link href="/">home</Link>
       <Link href="/professional">Pessoa profissional</Link>
     </div>
   )
