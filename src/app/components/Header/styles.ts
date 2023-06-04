@@ -7,12 +7,16 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media ${(p) => p.theme.queries.phoneAndSmaller} {
+    flex-direction: column;
+  }
 `
 
 export const Logo = styled(Link)`
   all: unset;
   font-size: 2rem;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(p) => p.theme.colors.primary};
   font-weight: 700;
 
   transition: all 0.2s ease 0s;
@@ -27,6 +31,10 @@ export const Logo = styled(Link)`
 export const Nav = styled.nav`
   display: flex;
   gap: 2.5rem;
+
+  @media ${(p) => p.theme.queries.phoneAndSmaller} {
+    gap: 1rem;
+  }
 `
 
 interface IsActiveLink {
@@ -37,8 +45,7 @@ export const NavLinks = styled(Link)<IsActiveLink>`
   all: unset;
   font-size: 1rem;
   font-weight: 700;
-  color: ${(props) =>
-    props.active ? props.theme.colors.primary : props.theme.colors.black};
+  color: ${(p) => (p.active ? p.theme.colors.primary : p.theme.colors.black)};
 
   transition: all 0.2s ease 0s;
 
@@ -46,5 +53,9 @@ export const NavLinks = styled(Link)<IsActiveLink>`
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media ${(p) => p.theme.queries.phoneAndSmaller} {
+    font-size: 0.875rem;
   }
 `

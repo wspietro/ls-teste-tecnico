@@ -8,7 +8,7 @@ export const defaultTheme = {
     'dark-gray': '#515151',
   },
   queries: {
-    phoneAndSmaller: '(max-width: 59.375rem)', // 520
-    laptopAndSmaller: '(max-width: 81.25rem)', // 1040
+    phoneAndSmaller: '(max-width: 32.5rem)', // 520
+    laptopAndSmaller: '(max-width: 65rem)', // 1040
   },
 } as const

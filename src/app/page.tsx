@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 const Title = styled.h1`
-  color: ${(props) => props.theme.white};
+  color: ${(p) => p.theme.white};
 `
 
 export default function Home() {

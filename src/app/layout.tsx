@@ -23,6 +23,14 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   block-size: 100vh;
+
+  @media ${(p) => p.theme.queries.laptopAndSmaller} {
+    padding: 0rem 2rem;
+  }
+
+  @media ${(p) => p.theme.queries.phoneAndSmaller} {
+    padding: 0rem 1rem;
+  }
 `
 
 export default function RootLayout({ children }: { children: ReactNode }) {
