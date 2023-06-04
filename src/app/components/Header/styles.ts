@@ -38,14 +38,14 @@ export const Nav = styled.nav`
 `
 
 interface IsActiveLink {
-  active: boolean
+  $active: boolean
 }
 
 export const NavLinks = styled(Link)<IsActiveLink>`
   all: unset;
   font-size: 1rem;
   font-weight: 700;
-  color: ${(p) => (p.active ? p.theme.colors.primary : p.theme.colors.black)};
+  color: ${(p) => (p.$active ? p.theme.colors.primary : p.theme.colors.black)};
 
   transition: all 0.2s ease 0s;
 
