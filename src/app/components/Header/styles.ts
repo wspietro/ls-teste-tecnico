@@ -2,14 +2,19 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 export const HeaderContainer = styled.header`
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 4rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  @media ${(p) => p.theme.queries.laptopAndSmaller} {
+    padding: 0rem 2rem;
+  }
+
   @media ${(p) => p.theme.queries.phoneAndSmaller} {
     flex-direction: column;
+    padding: 0rem 1rem;
   }
 `
 
