@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1 align="center" style="color: rgba(68, 131, 97, 1);">Teste Técnico Lacrei Saúde</h1>
 
-First, run the development server:
+<p align="center">
+  <a href="#-tecnologias-e-bibliotecas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre-o-projeto">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>
+</p>
+
+<br>
+
+## ✏️ Tecnologias e bibliotecas
+
+Para a construção do projeto, foram utilizadas as seguintes tecnologias:
+
+- [React.js](https://nextjs.org/)
+- [Next.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [styled-components](https://styled-components.com/)
+
+<br>
+
+---
+
+## ✨ NextJs 13
+
+O projeto foi construído em cima do Next.Js 13, o que implica em mudanças notáveis na arquitetura quando comparado com o Next.Js 12. Entre as principais alterações encontramos:
+- O novo diretório **App** subistitui o diretório **pages**, funcionando de forma muito similar como anteriormente. As rotas ainda são baseadas em arquivos aninhados, mas agora a UI particular de uma rota é definida por **page.tsx**;
+- O arquivo **layout.tsx** substitui os arquivos **_app.tsx** e **_document.tsx**. Além de realizar configurações, ele aplica o layout comum para as rotas da aplicação, no nosso caso, header e footer;
+- O **App** router é construído em cima dos *React Server Components* (React 18). Isso significa que as bibliotecas CSS-In-Js (que precisam de Runtime Js) não possuem suporte nos server components (que passaram a ser padrão no Next). Assim, uma configuração extra para *styled-components* pode ser encontrada dentro do diretóro **lib**. Além disso, os arquivos que utilizam do *styled-components* possuem *use-client* definidos no topo, para podermos utilizar **Client Components** nessa nova versão;
+- A nova versão do NextJs introduz o módulo *next/font* para otimização de fonte. A configuração pode ser encontrada no arquivo **layout.tsx**;
+- Por utilizar **Client Components**, não foi possível configurar os metadados das páginas, por isso a ausência do título nos navegadores.
+
+
+---
+
+## 📄 Como executar
+Para executar o projeto, rode o seguinte código no terminal após clonar o mesmo:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+$ npm install
+
+$ npm run build
+
+$ npm run dev
+
+$ npm run start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
