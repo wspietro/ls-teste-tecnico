@@ -2,14 +2,14 @@
 <h1 align="center" style="color: rgba(68, 131, 97, 1);">Teste Técnico Lacrei Saúde</h1>
 
 <p align="center">
-  <a href="#-tecnologias-e-bibliotecas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-sobre-o-projeto">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-nextjs-13">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>
 </p>
 
 <br>
 
-## ✏️ Tecnologias e bibliotecas
+## ✏️ Tecnologias
 
 Para a construção do projeto, foram utilizadas as seguintes tecnologias:
 
