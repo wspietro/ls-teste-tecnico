@@ -16,7 +16,7 @@ export default function Professional() {
         </p>
       </Description>
       <ImageWrapper>
-        <Image src={HomeBanner} alt="home banner" quality={100} />
+        <Image src={HomeBanner} alt="home profissional" quality={100} />
       </ImageWrapper>
     </HomeContainer>
   )

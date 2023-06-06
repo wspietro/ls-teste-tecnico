@@ -17,7 +17,7 @@ export default function User() {
         </p>
       </Description>
       <ImageWrapper>
-        <Image src={HomeBanner} alt="home banner" quality={100} />
+        <Image src={HomeBanner} alt="home user" quality={100} />
       </ImageWrapper>
     </HomeContainer>
   )
