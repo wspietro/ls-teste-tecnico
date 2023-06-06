@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 export const HomeContainer = styled.main`
   display: flex;
   justify-content: space-between;
+  flex: 1;
 
   background-color: ${(p) => p.theme.colors.white};
   padding: 4rem 4rem 0rem;
@@ -11,6 +12,7 @@ export const HomeContainer = styled.main`
   @media ${(p) => p.theme.queries.laptopAndSmaller} {
     flex-direction: column;
     align-items: center;
+    justify-content: unset;
     padding: 2rem 2rem 0rem;
   }
 
@@ -95,6 +97,11 @@ export const ButtonSecondary = styled(Button)`
 
 export const ImageWrapper = styled.div`
   max-width: 33.75rem;
+  margin-top: 2rem;
+
+  @media ${(p) => p.theme.queries.phoneAndSmaller} {
+    margin-top: 0rem;
+  }
 
   img {
     width: 100%;

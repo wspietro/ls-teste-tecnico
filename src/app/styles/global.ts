@@ -7,14 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  :focus {
-    outline: 0;
-    box-shadow: 0 0 0 2px red;
-  }
-
   body {
     background-color: ${(p) => p.theme.colors.white};
     -webkit-font-smoothing: antialiased;
     block-size: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 `

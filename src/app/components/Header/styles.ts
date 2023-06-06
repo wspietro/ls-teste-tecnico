@@ -26,7 +26,7 @@ export const Logo = styled(Link)`
   color: ${(p) => p.theme.colors.primary};
   font-weight: 700;
 
-  transition: all 0.2s ease 0s;
+  transition: opacity 0.2s ease 0s;
 
   cursor: pointer;
 

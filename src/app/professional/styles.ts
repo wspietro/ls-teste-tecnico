@@ -6,10 +6,12 @@ export const HomeContainer = styled.main`
 
   background-color: ${(p) => p.theme.colors.white};
   padding: 4rem 4rem 0rem;
+  flex: 1;
 
   @media ${(p) => p.theme.queries.laptopAndSmaller} {
     flex-direction: column;
     align-items: center;
+    justify-content: unset;
     padding: 2rem 2rem 0rem;
   }
 
