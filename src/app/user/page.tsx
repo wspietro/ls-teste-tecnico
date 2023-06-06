@@ -1,11 +1,24 @@
-import Link from 'next/link'
+'use client'
+
+import Image from 'next/image'
+import { HomeContainer, Description, ImageWrapper } from './styles'
+
+import HomeBanner from '../../assets/user-banner.svg'
 
 export default function User() {
   return (
-    <div>
-      <h1>Pessoa usuária</h1>
-      <Link href="/">home</Link>
-      <Link href="/professional">Pessoa profissional</Link>
-    </div>
+    <HomeContainer>
+      <Description>
+        <h1>Pessoa Usuária</h1>
+        <p>
+          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
+          por profissionais de qualidade e que atendam às suas necessidades de
+          forma segura e acolhedora.
+        </p>
+      </Description>
+      <ImageWrapper>
+        <Image src={HomeBanner} alt="home banner" quality={100} />
+      </ImageWrapper>
+    </HomeContainer>
   )
 }

@@ -11,12 +11,12 @@ export const HeaderContainer = styled.header`
   background-color: ${(p) => p.theme.colors['light-gray']};
 
   @media ${(p) => p.theme.queries.laptopAndSmaller} {
-    padding: 0rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   @media ${(p) => p.theme.queries.phoneAndSmaller} {
     flex-direction: column;
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
   }
 `
 
