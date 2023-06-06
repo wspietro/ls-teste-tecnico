@@ -8,6 +8,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  background-color: ${(p) => p.theme.colors['light-gray']};
+
   @media ${(p) => p.theme.queries.laptopAndSmaller} {
     padding: 0rem 2rem;
   }
